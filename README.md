@@ -14,9 +14,11 @@ All the category theory used in programming in one page
   ```scala
   List(1,1,2).extend(sumOfList) = List(4, 3, 2)
   // list's cursor = head + tail
+  sumOfList: List[Int] => Int
 
-  AST(nodes...).extend(typecheckNodeAndChildren) // the type of each node depends on the types of child nodes
+  AST(nodes...).extend(typecheckNodeAndChildren) = AST(typednodes...) // the type of each node depends on the types of child nodes
   // ast's cursor = node + children
+  typecheckNodeAndChildren: AST[Node] => TypedNode
   ```
 
 **algebra**: interface + laws
