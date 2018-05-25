@@ -53,7 +53,7 @@ All the category theory used in programming in one page
      // i can choose from any paths (F orElse F orElse F orElse...) a one successful F!
     ```
 
-  * **applicative** tensor: `free map2`: `map2 F G = F[a], G[b], (a, b) => c`
+  * **applicative** tensor: `free map2`: `map2 F G = (F[a], G[b], (a, b) => c)`
     ```scala
      plus: F map2 F => F
      // if i can combine map2s of F then i can combine a mapN of F!
