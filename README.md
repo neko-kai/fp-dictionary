@@ -38,7 +38,7 @@ All the category theory used in programming in one page
   * **monoid** tensor: `tuple`
     ```scala
      plus: (A, A) => A
-     // if i can combine tuples of A then i can combine a tupleN (list) of A!
+     // if i can combine tuples of A then i can combine a tupleN of A!
      // i can squish any List[A] into one A!
     ```
   * **monad** tensor: `compose`: `compose F G = F[G[_]]`
