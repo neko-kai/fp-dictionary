@@ -44,14 +44,14 @@ All the category theory used in programming in one page
   * **monad** tensor is `compose`. `compose F G = F[G[_]]`
     ```scala
      plus: F compose F => F  // flatten: F[F[_]] => F[_]
-    // if i can combine composes then i can combine a composeN!
+    // if i can combine composes of F then i can combine a composeN of F!
     // i can flatten any F[F[F[F[F[F[F... into one F!
     ```
 
   * **alternative** tensor is `higherTuple`. `higherTuple F G = (F[_], G[_])`
     ```scala
      plus: F higherTuple F => F  // orElse: F[_], F[_] => F[_]
-     // if i can combine higherTuples then i can combine a higherTupleN!
+     // if i can combine higherTuples of F then i can combine a higherTupleN of F!
      // i can choose from any paths (F orElse F orElse F orElse...) one successful F!
     ```
 
