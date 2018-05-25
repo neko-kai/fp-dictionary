@@ -10,7 +10,7 @@ All the category theory used in programming in one page
 **alternative**: gives `orElse: F[_], F[_] => F[_]`<br/>
 **category**: function-like entity with `compose` and `identity`<br/>
 **arrow**: category with `fork`/`join`<br/>
-**comonad**: given `Cursor[A]` with **output** `A`, allows post-processing values under all nested cursors with `Cursor[A] => B` to get `Cursor[B]`. i.e.
+**comonad**: given `Cursor[A]` with **output** `A`, allows post-processing values under nested cursors with `Cursor[A] => B` to get `Cursor[B]`. i.e.
   ```scala
   List(1,1,2).extend(sumOfList) = List(4, 3, 2)
   // list's cursor = head + tail
