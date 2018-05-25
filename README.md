@@ -52,7 +52,7 @@ All the category theory used in programming in one page
     ```scala
      plus: F higherTuple F => F  // orElse: F[_], F[_] => F[_]
      // if i can combine higherTuples then i can combine a higherTupleN!
-     // i can choose from any paths (F orElse F orElse F orElse...) a one successful F!
+     // i can choose from any paths (F orElse F orElse F orElse...) one successful F!
     ```
 
   * **applicative** tensor: `free map2`: `map2 F G = (F[a], G[b], (a, b) => c)`
