@@ -35,27 +35,27 @@ All the category theory used in programming in one page
 
 **on monoids**: `applicative`, `alternative`, `monad` and `category` are all specialized **monoids** with different tensors<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**intuition**:
-  * **monoid** tensor: `tuple`
+  * **monoid** tensor is `tuple`
     ```scala
      plus: (A, A) => A
      // if i can combine tuples of A then i can combine a tupleN of A!
      // i can squish any List[A] into one A!
     ```
-  * **monad** tensor: `compose`: `compose F G = F[G[_]]`
+  * **monad** tensor is `compose`. `compose F G = F[G[_]]`
     ```scala
      plus: F compose F => F  // flatten: F[F[_]] => F[_]
     // if i can combine composes then i can combine a composeN!
     // i can flatten any F[F[F[F[F[F[F... into one F!
     ```
 
-  * **alternative** tensor: `higherTuple`: `higherTuple F G = (F[_], G[_])`
+  * **alternative** tensor is `higherTuple`. `higherTuple F G = (F[_], G[_])`
     ```scala
      plus: F higherTuple F => F  // orElse: F[_], F[_] => F[_]
      // if i can combine higherTuples then i can combine a higherTupleN!
      // i can choose from any paths (F orElse F orElse F orElse...) one successful F!
     ```
 
-  * **applicative** tensor: `free map2`: `map2 F G = (F[a], G[b], (a, b) => c)`
+  * **applicative** tensor is `free map2`. `map2 F G = (F[a], G[b], (a, b) => c)`
     ```scala
      plus: F map2 F => F
      // if i can combine map2s of F then i can combine a mapN of F!
