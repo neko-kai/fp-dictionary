@@ -76,6 +76,6 @@ All the category theory used in programming in one page
 **recursion**: `fold`-like function calling itself with some context while `reducing` a context.<br/>
 **corecursion**: `unfold`-like function calling itself with some context while `building up` a context<br/>
 
-**FP benefits**:<br/>
+**benefits of FP**:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;most programming tasks are reduced to variants of `plus`, lowering mental overhead
 
