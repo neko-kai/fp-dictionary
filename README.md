@@ -68,7 +68,7 @@ All the category theory used in programming in one page
 **meta**: `fold` then `unfold`<br/>
 **prepro**: `map` then `fold`<br/>
 **postpro**: `unfold` then `map`<br/>
-**zygohistoprepro**: *colloq.* meme<br/>
+**zygohistoprepro**: dumb meme<br/>
 **elgot algebra**: `fold` with short-circuit<br/>
 **elgot coalgebra**: `unfold` with short-circuit<br/>
 **f-algebra**: `F[A] => A`, fold-like function<br/>
