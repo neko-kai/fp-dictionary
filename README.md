@@ -29,7 +29,7 @@ All the category theory used in programming in one page
 **free monoid**: *colloq.* list<br/>
 **yoneda**: *colloq.* free contravariant functor<br/>
 **coyoneda**: *colloq.* free functor<br/>
-**day convolution**: *colloq.* free map2<br/>
+**day convolution**: representation of `map2`<br/>
 
 **tensor**: binder of multiple arguments. default tensor is tuple: `(A, B) => C`
 
@@ -55,7 +55,7 @@ All the category theory used in programming in one page
      // i can choose from any paths (F orElse F orElse F orElse...) one successful F!
     ```
 
-  * **applicative** tensor is `free map2`. `map2 F G = (F[a], G[b], (a, b) => c)`
+  * **applicative** tensor is `map2` (day convolution). `map2 F G = (F[a], G[b], (a, b) => c)`
     ```scala
      plus: F map2 F => F
      // if i can combine map2s of F then i can combine a mapN of F!
