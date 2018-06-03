@@ -1,13 +1,13 @@
-All the category theory used in programming in one page
+Programming subset of Category Theory Cheatsheet
 ------
 
 **functor**: given `Producer[A]` with **output** `A`, allows post-processing values with `A => B` to get `Producer[B]`<br/>
 **contravariant functor**: given `Consumer[A]` with **input** `A`, allows pre-processing values with `B => A` to get `Consumer[B]`<br/>
 **profunctor**: given `Pipe[A, B]` with **input** `A` and **output** `B`, allow pre-processing **input** values with `C => A`, and post-processing **output** values with `B => D` to get `Pipe[C, D]`<br/>
 **applicative**: gives `map2`, `map3` **...** `mapN`. where `map2: (F[A], F[B]), (A, B => C) => F[C]` **...** `mapN: (F[A] .. F[N]), (A .. N => Z) => F[Z]`<br/>
-**monad**: gives `flatten: F[F[_]] => F[_]`. If you `map`, then `flatten`, you can chain operations: `flatten(maybeReadFile.map(maybeParseAsInteger)) = Maybe[Integer]`<br/>
+**monad**: gives `flatten: F[F[A]] => F[A]`. If you `map`, then `flatten`, you can chain operations: `flatten(maybeReadFile.map(maybeParseAsInteger)) = Maybe[Integer]`<br/>
 **monoid**: gives `plus` and `zero`<br/>
-**alternative**: gives `orElse: F[_], F[_] => F[_]`<br/>
+**alternative**: gives `orElse: F[A], F[A] => F[A]`<br/>
 **category**: function-like entity with `compose` and `identity`<br/>
 **arrow**: category with `fork`/`join`<br/>
 **comonad**: given `Cursor[A]` with **output** `A`, allows post-processing values under nested cursors with `Cursor[A] => B` to get `Cursor[B]`. i.e.
@@ -55,7 +55,7 @@ All the category theory used in programming in one page
      // i can choose from any paths (F orElse F orElse F orElse...) one successful F!
     ```
 
-  * **applicative** tensor is `map2` (day convolution). `map2 F G = (F[a], G[b], (a, b) => c)`
+  * **applicative** tensor is `map2` (day convolution). `map2 F G = (F[A], G[B], (A, B) => C)`
     ```scala
      plus: F map2 F => F
      // if i can combine map2s of F then i can combine a mapN of F!
@@ -78,4 +78,3 @@ All the category theory used in programming in one page
 
 **benefits of FP**:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;most programming tasks are reduced to variants of `plus`, lowering mental overhead
-
