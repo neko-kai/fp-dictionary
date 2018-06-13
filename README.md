@@ -14,6 +14,9 @@ Programming subset of Category Theory Cheatsheet
   ```scala
   List(1,1,2).extend(sumOfList) = List(4, 3, 2)
   // list's cursor = head + tail
+  // sumOfList(List(1,1,2)) = 4
+  // sumOfList(List(1,2))   = 3
+  // sumOfList(List(2))     = 2 
   sumOfList: List[Int] => Int
 
   AST(nodes...).extend(typecheckNodeAndChildren) = AST(typednodes...) // the type of each node depends on the types of child nodes
@@ -77,4 +80,11 @@ Programming subset of Category Theory Cheatsheet
 **corecursion**: `unfold`-like function calling itself with some context while `building up` a context<br/>
 
 **benefits of FP**:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;most programming tasks are reduced to variants of `plus`, lowering mental overhead
+Most programming tasks are reduced to variants of `plus`.
+
+Or even:
+
+Most programming tasks can be summarized as "do a bunch of shit".
+FP separates the `bunch` and the `do` parts.
+Use any of the available `plus`es to bunch your program together. Then write an interpreter for your program and `do` it.
+And since we can have multiple interpreters, we gain the ability to "do a bunch of different shit"
