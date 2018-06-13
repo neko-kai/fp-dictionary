@@ -85,5 +85,5 @@ Most programming tasks are reduced to variants of `plus`.
 **or even**:<br/>
 Most programming tasks can be summarized as "do a bunch of shit".<br/>
 FP separates the `bunch` and the `do` parts.<br/>
-Use any of the available `plus`es to bunch your program together, then write an interpreter for your program and just `do` it.<br/>
+Use any of the available `plus`es to bunch your program together, then write an interpreter for your program and`do` it.<br/>
 And since we can have multiple interpreters, we also gain the ability to "do a bunch of different shit"
