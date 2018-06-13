@@ -82,8 +82,7 @@ Programming subset of Category Theory Cheatsheet
 **benefits of FP**:<br/>
 Most programming tasks are reduced to variants of `plus`.
 
-Or even:
-
+**or even**:<br/>
 Most programming tasks can be summarized as "do a bunch of shit".
 FP separates the `bunch` and the `do` parts.
 Use any of the available `plus`es to bunch your program together. Then write an interpreter for your program and `do` it.
