@@ -65,19 +65,21 @@ Programming subset of Category Theory Cheatsheet
      // i can zip any (F[A], F[B] ... F[N]) with an (A ... N => Z) to get one F[Z]!
     ```
 
+**f-algebra**: `F[A] => A`, fold-like function<br/>
+**f-coalgebra**: `A => F[A]`, unfold-like function<br/>
+**recursion**: `fold`-like function calling itself with some context while `reducing` a context.<br/>
+**corecursion**: `unfold`-like function calling itself with some context while `building up` a context<br/>
+
 **cata**: `fold`<br/>
 **ana**: `unfold`<br/>
 **hylo**: `unfold` then `fold`<br/>
 **meta**: `fold` then `unfold`<br/>
 **prepro**: `map` then `fold`<br/>
 **postpro**: `unfold` then `map`<br/>
+**para**: `fold` with cursor<br/>
 **zygohistoprepro**: dumb meme<br/>
-**elgot algebra**: `fold` with short-circuit<br/>
-**elgot coalgebra**: `unfold` with short-circuit<br/>
-**f-algebra**: `F[A] => A`, fold-like function<br/>
-**f-coalgebra**: `A => F[A]`, unfold-like function<br/>
-**recursion**: `fold`-like function calling itself with some context while `reducing` a context.<br/>
-**corecursion**: `unfold`-like function calling itself with some context while `building up` a context<br/>
+**elgot algebra**: `unfold` then `fold` where `unfold` part can short-circuit<br/>
+**elgot coalgebra**: `unfold` then `fold` with cursor, where cursor tail is mapped by elgot coalgebra<br/>
 
 **benefits of FP**:<br/>
 Most programming tasks are reduced to variants of `plus`.
