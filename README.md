@@ -30,8 +30,8 @@ Programming subset of Category Theory Cheatsheet
 **free**: *colloq.* free monad<br/>
 **cofree**: *colloq.* free comonad<br/>
 **free monoid**: *colloq.* list<br/>
-**yoneda**: *colloq.* free contravariant functor<br/>
-**coyoneda**: *colloq.* free functor<br/>
+**yoneda**: *colloq.* free functor<br/>
+**coyoneda**: *colloq.* also free functor<br/>
 **day convolution**: representation of `map2`<br/>
 
 **tensor**: binder of multiple arguments. default tensor is tuple: `(A, B) => C`
