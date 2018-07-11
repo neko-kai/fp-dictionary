@@ -61,7 +61,7 @@ Programming subset of Category Theory Cheatsheet
 
   * **applicative** tensor is `map2` (day convolution). `map2 F G = (F[A], G[B], (A, B) => C)`
     ```scala
-     plus: F map2 F => F
+     plus: F map2 F => F  // map2: (F[A], F[B], (A, B) => C) => F[C]
      // if i can combine map2s of F then i can combine a mapN of F!
      // i can zip any (F[A], F[B] ... F[N]) with an (A ... N => Z) to get one F[Z]!
     ```
