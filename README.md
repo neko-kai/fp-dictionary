@@ -86,7 +86,7 @@ Programming subset of Category Theory Cheatsheet
 Most programming tasks are reduced to variants of `plus`.
 
 **or even**:<br/>
-Most programming tasks can be summarized as "do a bunch of shit".<br/>
+Most programming tasks can be summarized as "do a bunch of stuff".<br/>
 FP separates the `bunch` and the `do` parts.<br/>
 Use any of the available `plus`es to bunch your program together, then write an interpreter for it and just `do` it.<br/>
-And since we can have multiple interpreters, we also gain the ability to "do a bunch of different shit"
+And since we can have multiple interpreters, we also gain the ability to "do a bunch of different stuff"
